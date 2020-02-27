@@ -14,11 +14,10 @@ namespace TrashCollector2.Models
         {
         }
 
-        protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
-            base.OnModelCreating(modelBuilder);
-            
-        }
+        public DbSet<OffDate> OffDates { get; set; }
+        public DbSet<PaymentRequest> PaymentRequests { get; set; }
+        
+    
         
     }
 }
